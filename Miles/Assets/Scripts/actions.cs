@@ -12,6 +12,8 @@ public class actions : MonoBehaviour
   public GameObject buttonListHolder;
   public GameObject backButton;
 
+  public GameObject testobject;
+
   public Button[] actionButtons = new Button[4];
   map map;
   requirements requirements;
