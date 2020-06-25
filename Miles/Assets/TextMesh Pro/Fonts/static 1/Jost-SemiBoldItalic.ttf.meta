@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 58bbf29cfd1e9724183bb1e994742409
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Jost
+  fontNames:
+  - Jost
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: be8d3ad2fd8e60340a154e2fe8be9357, type: 3}
+  - {fileID: 12800000, guid: d536fa03eca60e64d9d98a164ed1daf7, type: 3}
+  - {fileID: 12800000, guid: 017e09946c0ae1d46847c6e042184b68, type: 3}
+  - {fileID: 12800000, guid: 2093e52551bb6464fa43ff7a47a087a1, type: 3}
+  - {fileID: 12800000, guid: 081ecf0603cccea44b557ab3a9084fa1, type: 3}
+  - {fileID: 12800000, guid: d487ed5786c580342938b99dcd2b5d33, type: 3}
+  - {fileID: 12800000, guid: 174ff298b6f1b5a42a4195cf57967336, type: 3}
+  - {fileID: 12800000, guid: f3381dc982b0a0e40a3e74895c17ea71, type: 3}
+  - {fileID: 12800000, guid: a15a5af938446e14ab9bcb095f187425, type: 3}
+  - {fileID: 12800000, guid: 63d9ad0b447a3704f8d0264d40acbad2, type: 3}
+  - {fileID: 12800000, guid: b4d3505cb224ca149b91fe885a203328, type: 3}
+  - {fileID: 12800000, guid: 5134bfec30075a24089a0e84787a7b5c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

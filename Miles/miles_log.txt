@@ -1,0 +1,122 @@
+** MILES NOTES **
+
+Key:
+  "#" Bonus goals
+	"*" Level of importance
+
+Log starts at 4-27-2020
+
+Previous work (4-24?-2020) has been about 10hrs, unlogged time.
+  -Setting up skill classes
+  -Time counter, day and hour.
+  -Two skills, Gaming and Cooking
+  -Both skills have clickable buttons to increase XP counter.
+  -Actions to increase XP increment time value.
+  -Basic UI set up with buttons and text.
+
+  Total Time: 10:00
+
+  FUTURE GOALS
+  -Attributes
+  -Roll your version of Miles on Play
+  #Success rate with every action
+
+4/27/2020 3:30p-5:00p, ~1:30, Total Time: 13:00.
+
+  First Sesh 1:30
+  -Finished the initial roll of all three attributes
+  -Refactored stateMachine/sceneSwitcher redundancy
+  -Created CharacterPage
+  -Changed 'logos' for the three pages
+  Second Sesh 1:30
+  -Wrote first few "scenes" for ACT 1
+  -Wrote out first few options for training cooking skill
+
+  FUTURE GOALS
+  **Confidence Level
+  *Success rates on skill(s)
+  #Keep writing story
+
+4/28/2020 2:00 in the evening with beer, Total Time 15:00
+  -Debated on drop tables
+  -Started building chance table for skill succession
+  -Thoughtout process of confidence and success chance.
+  -Not too much progress
+  -Much under-utilizied time
+
+4/29/2020 2:30 dedicated like 4 with distractions TOTAL TIME: 18:00
+  -Finished skill success table for T1-T5 skills
+  -Refactored clicking skill buttons to check success rates
+    -New script "Chance"
+      -Functions to check skill success chance and then a good/bad drop table happens
+  -Everything works! Built the project to phone and worked fine.
+
+  FUTURE GOALS
+  -Redesign layout, make it look better lol
+  -Money? Deck power?
+  #Descriptions (debug.log each action basically. maybe like a rolling text feed? ((twitch chat)))
+
+4/30/2020 3ish, with much wasted time, TOTAL TIME 21:00
+  -Added new layout for the main screen (temporary)
+  -Had to do some really dumb shit to figure out new buttons
+  -No more individual skill+action screen. Created 5 main screens and going to stick with that
+  -Added two new scripts for tomorrow to work on (cutscenes and information section)
+
+  FUTURE GOALS
+  -Make first decsriptions (you failed this task, etc)
+  #opening cutscene?? even if it is all just text, it's something
+  -add all skills in and test each one
+  #create options for actions based on scenarios????
+
+5/4/2020 (small break cuz I suck) 2:00 TOTAL TIME 23:00
+  -Refactored the checkProgress method, but need to do more work on it
+  -I got it to stop the user from completing an action if there is a story thing about to occur
+  -BUT I need to make a seperate method to get a bool and then something else to change the text
+  -on the right track, just need to break it up into smaller pieces.
+  -the more that happens the better off we will be.
+
+  FUTURE GOALS
+  -Fix progression. Top priority
+  - nothing else. see goal #1.
+
+5/5/2020 2:00 TOTAL TIME 25:00
+  -Late morning sesh (2 hours)
+    -kinda did what I needed to from the previous goal with seperating the progress check thing
+    -it doesn't really work the way I need it to I guess
+    -when I get back to it, I'm gonna work on writing out a diagram on how the actions menu is gonna work.
+    -I think with a button sectioned off from the text it'll make it easier to seperate and create a better game flow.
+
+    GOAL:
+    -Actions diagram. Make this shit work.
+
+5/7/2020 1:00 TOTAL TIME 26:00
+  Pre-sesh notes:
+    -Going to redesign today. Sick of looking at the black screen. Debating on switching to landscape but have not decided yet.
+
+5/8/2020 3:00 Real progress for the first time. TOTAL TIME 29:00
+  -Finalized colors and minor redesign.
+    -Actual colors being used. Much easier on the eyes
+  -Refactored state machine with enums. Much easier and cleaner
+  -Changed bottom half of screen with the nice looking stuff.
+    -Buttons that work when active and not active along with it's corresponding screen.
+  -Made use of the actual UI system with the vert/hori components and parent/child relationships
+    -clean
+
+  GOALS:
+  -Redo some of the storyboard stuff.
+  -Change the time to an enum if needed (probably unneccesary)
+  -Make sure the descriptions work with skills n shit, since I didn't check that yet.
+    -I'm sure it's fine
+
+5/11/2020 :30 Didn't do shit TOTAL TIME 29:30
+  -played runescape more than I should have.
+  -But i did figure out how I should do the drop rate thing
+    -not completely but I learned about random.value so thats cool i guess
+
+5/12/2020 :30 (not really a full hour but w/e) TOTAL TIME 30:00
+  -started the process of onClick and running the chance of something happening.
+  -with add event listener we can probs alter each click which could become messy
+
+  GOAL:
+  -CAN I IMPLEMENT A FORMULA WITH SKILLS/CONFIDENCE/Attributes
+  -pls;
