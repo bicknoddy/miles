@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
 
   Transform player;
+  bool isTouchingAction;
+  int speed = 500;
 
   void Start()
   {
@@ -16,21 +18,44 @@ public class PlayerMovement : MonoBehaviour
   {
     if(Input.GetKey(KeyCode.W))
     {
-      player.position = player.position + new Vector3(0, 250 * Time.deltaTime, 0);
+      player.position = player.position + new Vector3(0, speed * Time.deltaTime, 0);
     }
-    else if(Input.GetKey(KeyCode.A))
+
+    if(Input.GetKey(KeyCode.A))
     {
-      player.position = player.position + new Vector3(-250 * Time.deltaTime, 0, 0);
+      player.position = player.position + new Vector3(-speed * Time.deltaTime, 0, 0);
     }
-    else if(Input.GetKey(KeyCode.S))
+
+    if(Input.GetKey(KeyCode.S))
     {
-      player.position = player.position + new Vector3(0, -250 * Time.deltaTime, 0);
+      player.position = player.position + new Vector3(0, -speed * Time.deltaTime, 0);
     }
-    else if(Input.GetKey(KeyCode.D))
+    
+    if(Input.GetKey(KeyCode.D))
     {
-      player.position = player.position + new Vector3(250 * Time.deltaTime, 0 , 0);
+      player.position = player.position + new Vector3(speed * Time.deltaTime, 0 , 0);
+    }
+
+    if(Input.GetKey(KeyCode.Space) && isTouchingAction)
+    {
+      Debug.Log("run action");
     }
   }
 
+  void OnTriggerEnter2D(Collider2D other)
+  {
+    if(other.tag == "Action")
+    {
+      isTouchingAction = true;
+    }
+  }
+
+  void OnTriggerExit2D(Collider2D other)
+  {
+    if(other.tag == "Background")
+    {
+      speed = -speed;
+    }
+  }
   
 }

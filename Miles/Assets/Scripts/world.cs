@@ -14,6 +14,7 @@ public class world : MonoBehaviour
   public GameObject optionsMenu;
   public GameObject skillsMenu;
   public GameObject description;
+  public GameObject playScreen;
 
   public static int step;
 
@@ -69,6 +70,7 @@ public class world : MonoBehaviour
       case GameState.MainMenu:
         startMenu.SetActive(false);
         playMenu.SetActive(true);
+        playScreen.SetActive(true);
         break;
     }
   }
