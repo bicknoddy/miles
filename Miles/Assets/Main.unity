@@ -2580,7 +2580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 241.65002, y: -240.81596}
+  m_AnchoredPosition: {x: 241.65002, y: -240.81595}
   m_SizeDelta: {x: 483.3, y: 160.54398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929884137
@@ -5416,6 +5416,7 @@ GameObject:
   - component: {fileID: 1739995128}
   - component: {fileID: 1739995129}
   - component: {fileID: 1739995130}
+  - component: {fileID: 1739995131}
   m_Layer: 0
   m_Name: Action1
   m_TagString: Action
@@ -5503,6 +5504,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.58
+--- !u!114 &1739995131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739995127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba699f92ad78a643915050331e9e0df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 
+  reqDeckPwr: 0
 --- !u!1 &1748488481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,7 +5925,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
